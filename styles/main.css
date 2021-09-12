@@ -40,6 +40,7 @@ main {
     cursor: pointer;
     background: rgb(85, 230, 193);
     font-size: 1.2rem;
+    padding: 1rem;
     color: rgb(241, 241, 241);
 }
 
