@@ -6,7 +6,7 @@ footer{
     font-size: 0.9rem;
 }
 .copyright{
-    max-width: 70%;
+    max-width: 50%;
     margin:0 auto;
     text-align: center;
     padding:1rem 0;
@@ -19,3 +19,11 @@ footer{
 
 
 /*--Responsive--*/
+
+/*--Móvil--*/
+
+@media (min-width:240px) and (max-width:720px){
+    .copyright{
+        max-width: 70%;
+    }
+}

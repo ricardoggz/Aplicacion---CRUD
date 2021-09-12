@@ -1,44 +1,65 @@
 header{
+    background: rgb(44, 58, 71);
     width: 100%;
     height: auto;
-    background: rgb(44, 58, 71);
+    padding: 1rem 0;
 }
 
-header a{
+.container-menu{
+    max-width: 50%;
+    height:auto;
+    margin:0 auto;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.logo a{
+    text-decoration: none;
+    color:rgb(179, 55, 113);
+}
+.nav-menu li{
+    display: inline-flex;
+}
+.nav-menu a{
     text-decoration: none;
     color:rgb(241, 241, 241);
     padding: 0 0.5rem;
 }
-
-header h3{
-    color:rgb(179, 55, 113);
-}
-
-.container-menu{
-    max-width: 70%;
-    margin:0 auto;
-    padding: 1rem 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    text-align: center;
-}
-
-.container-menu .logo{
-    margin:0;
-    padding:0;
-    width: 4rem;
-}
-
-
-
-nav a:hover{
+.nav-menu a:hover{
     color:rgb(179, 55, 113);
     transition: all 300ms ease-in-out;
 }
-
-
-
+.icons{
+    display: none;
+}
 
 
 /*--Responsive (header)*/
+
+/*Móvil*/
+
+@media (min-width:240px) and (max-width:720px){
+
+    header{
+        position: fixed;
+        z-index: 100;
+    }
+
+    .container-menu{
+        max-width: 70%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .text{
+        display: none;
+    }
+    .icons{
+        display: flex;
+    }
+
+}
+
+/*Tablet*/
