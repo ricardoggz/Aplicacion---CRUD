@@ -38,21 +38,23 @@
             <div class="home-container">
                 <h1>Lista de tareas</h1>
                 <div class="board">
-                    <form action="" class="">
+                    <form action="" id="formtask">
 
                         <h2>Escribe tu tarea:</h2>
 
-                        <input type="text" name="" id="" placeholder="Tarea:" />
+                        <input type="text"  id="action" placeholder="Tarea:" />
                         <h2>Describe tu tarea:</h2>
 
-                        <input type="text" name="" id=""
+                        <input type="text" id="description"
                             placeholder="Descripción:" />
 
-                        <input type="button" value="Agregar a la lista"
+                        <input type="submit" value="Agregar a la lista"
                             class="boton" />
                     </form>
 
                 </div>
+
+                <div id="tasks"></div>
             </div>
         </main>
 
@@ -61,6 +63,9 @@
                 <p>&copy; Copyright - 2021. Creado por <a href="">@ricardo_guevarag</a></p>
             </div>
         </footer>
+
+
+        <script src="AppJS/app.js"></script>
 
     </body>
 </html>
