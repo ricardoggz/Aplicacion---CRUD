@@ -1,0 +1,21 @@
+footer{
+    width: 100%;
+    height: auto;
+    background: rgb(44, 58, 71);
+    color:rgb(241, 241, 241);
+    font-size: 0.9rem;
+}
+.copyright{
+    max-width: 70%;
+    margin:0 auto;
+    text-align: center;
+    padding:1rem 0;
+}
+.copyright a{
+    color:rgb(179, 55, 113);
+    text-decoration: none;
+}
+
+
+
+/*--Responsive--*/

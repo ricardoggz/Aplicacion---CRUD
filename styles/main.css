@@ -1,0 +1,51 @@
+main{
+    width: 100%;
+    height: auto;
+    padding: 3rem 0;
+    background:rgb(241, 241, 241);
+    color:rgb(44, 58, 71);
+    font-weight: 400;
+}
+
+.home-container{
+    max-width: 70%;
+    margin:0 auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.board{
+    width: 100%;
+    height: auto;
+    margin:1rem auto;
+    padding:2rem;
+    background: rgb(44, 58, 71);
+    color:rgb(85, 230, 193);
+    text-align: start;
+}
+
+.board input, textarea{
+
+    margin:1rem 0;
+    padding:2rem;
+    width: 100%;
+    height: 2rem;
+
+}
+
+.board .boton{
+    width:auto;
+    height: auto;
+    cursor:pointer;
+    background: rgb(85, 230, 193);
+    font-size: 1.2rem;
+    color:rgb(241, 241, 241);
+}
+
+.board .boton:hover{
+    background:rgb(88, 177, 159);
+    transition: all 300ms ease;
+}
