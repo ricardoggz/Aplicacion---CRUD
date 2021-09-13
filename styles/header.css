@@ -41,25 +41,32 @@ header{
 
 @media (min-width:240px) and (max-width:720px){
 
-    header{
-        position: fixed;
-        z-index: 100;
-    }
-
     .container-menu{
-        max-width: 70%;
+        max-width: 90%;
         margin: 0 auto;
         display: flex;
-        justify-content: space-between;
+        justify-content:space-around;
     }
 
     .text{
         display: none;
     }
-    .icons{
+    .icons {
         display: flex;
+        font-size: 1rem;
     }
 
 }
 
-/*Tablet*/
+/*Desktop*/
+
+@media (min-width:1366px) and (max-width:1920px){
+
+    .container-menu{
+        max-width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content:space-evenly;
+    }
+
+}
