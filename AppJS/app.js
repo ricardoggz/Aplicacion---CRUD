@@ -36,14 +36,17 @@ function saveTask(saveText) {
 
 //Mostrar datos almacenados  en pantalla
 
-//function getTask() {
+function getTask() {
 
-    //let tasks = JSON.parse(localStorage.getItem("tasks"));
-    //let tasksView = document.getElementById("tasks");
+    let tasks = JSON.parse(localStorage.getItem("tasks"));
+    let tasksView = document.getElementById("tasks");
 
-    //for(let i = 0; i < tasks.lenght; i++) {
 
-        //let title = tasks[i].title;
-        //let description = tasks[i].description;
-    //}
-//}
+    for(let i = 0; i < tasks.lenght; i++) {
+
+        let title = tasks[i].title;
+        let description = tasks[i].description;
+
+        tasksView.innerHTML = + title, + description;
+    }
+}

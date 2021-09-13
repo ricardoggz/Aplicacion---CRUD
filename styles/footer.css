@@ -4,15 +4,10 @@ footer{
     background: rgb(44, 58, 71);
     color:rgb(241, 241, 241);
     font-size: 0.9rem;
-}
-.copyright{
-    max-width: 50%;
-    margin:0 auto;
     text-align: center;
     padding:1rem 0;
-    text-align: center
 }
-.copyright a{
+footer a{
     color:rgb(179, 55, 113);
     text-decoration: none;
 }
@@ -28,17 +23,4 @@ footer{
     footer{
         font-size: 0.6rem;
     }
-    .copyright{
-        max-width: 90%;
-    }
-}
-
-/*Desktop*/
-
-@media (min-width:1366px) and (max-width:1920px){
-
-    .copyright{
-        width: 100%;
-    }
-
 }

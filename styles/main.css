@@ -14,16 +14,16 @@ main {
     display: flex;
     flex-direction: column;
     text-align: center;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 
 .board {
     width: 100%;
     height: auto;
-    margin: 1rem auto;
+    margin: 0 auto;
     padding: 2rem;
-    text-align: start;
+    text-align: justify;
 }
 
 .board input, textarea {

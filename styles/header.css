@@ -3,41 +3,17 @@ header{
     width: 100%;
     height: auto;
     padding: 1rem 0;
+    text-align: center;
 }
-
-.container-menu{
-    max-width: 50%;
-    height:auto;
-    margin:0 auto;
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    
-}
-.logo a{
+header a{
     text-decoration: none;
     color:rgb(179, 55, 113);
-}
-.nav-menu li{
-    display: inline-flex;
-}
-.nav-menu a{
-    text-decoration: none;
-    color:rgb(241, 241, 241);
-    padding: 0 0.5rem;
-}
-.nav-menu a:hover{
-    color:rgb(179, 55, 113);
-    transition: all 300ms ease-in-out;
-}
-.icons{
-    display: none;
 }
 
 
 /*--Responsive (header)*/
 
-/*Móvil*/
+/*Móvil
 
 @media (min-width:240px) and (max-width:720px){
 
@@ -58,7 +34,7 @@ header{
 
 }
 
-/*Desktop*/
+/*Desktop
 
 @media (min-width:1366px) and (max-width:1920px){
 
@@ -69,4 +45,4 @@ header{
         justify-content:space-evenly;
     }
 
-}
+}*/
