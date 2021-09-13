@@ -29,33 +29,21 @@ function saveTask(saveText) {
 
     }
 
-
+   
     saveText.preventDefault();
 
 }
 
 //Mostrar datos almacenados  en pantalla
 
-function getTask() {
+//function getTask() {
 
-    let tasks = JSON.parse(localStorage.getItem("tasks"));
-    let taskView = document.getElementById("tasks");
+    //let tasks = JSON.parse(localStorage.getItem("tasks"));
+    //let tasksView = document.getElementById("tasks");
 
-    //taskView.innerHTML = "";
+    //for(let i = 0; i < tasks.lenght; i++) {
 
-    for(let i = 0; i < tasks.lenght; i++) {
-
-        let title = tasks[i].title;
-        let description = tasks[i].description;
-
-        taskView.innerHTML += `<div>
-        <p>${title}</p>
-        <p>${description}</p>
-        <a href="">Borrar</a>
-    </div>`
-
-    }
-
-
-
-}
+        //let title = tasks[i].title;
+        //let description = tasks[i].description;
+    //}
+//}

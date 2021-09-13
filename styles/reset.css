@@ -10,8 +10,9 @@ html{
     scroll-behavior: smooth;
 }
 h1{
+    padding:1rem 0;
     font-weight: 400;
-    color:rgb(179, 55, 113);
+    color:rgb(241, 241, 241);
 }
 h2{
     font-weight: 400;
