@@ -9,7 +9,7 @@ main {
 
 .home-container {
     background: rgb(44, 58, 71);
-    max-width: 50%;
+    max-width: 40%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -37,10 +37,14 @@ main {
     width: auto;
     height: auto;
     cursor: pointer;
-    background:#25CCF7;
+    background:rgb(37, 204, 247);
     color:rgb(241,241,241);
     font-size: 1rem;
     padding: 0.5rem;
+}
+
+.board .btn-danger{
+    background: rgb(255, 77, 77);
 }
 
 
