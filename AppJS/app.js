@@ -1,36 +1,40 @@
-document.getElementById("formtask").addEventListener("submit", saveTask);
+//Evento para almacenar datos desde el formulario
+
+document.getElementById('formtask').addEventListener('submit', saveTask);
+
 
 //Almacenamiento de datos en LocalStorage
 
-function saveTask(saveText) {
+function saveTask(e) {
 
-    let action = document.getElementById("action").value;
-    let description = document.getElementById("description").value;
+    let action = document.getElementById('action').value;
+    let description = document.getElementById('description').value;
 
 
 
-    const task = {
+    let task = {
         action, description
     };
 
-    if (localStorage.getItem("tasks") === null) {
+    if (localStorage.getItem('tasks') === null) {
         
         let tasks = [];
         tasks.push(task);
-        localStorage.setItem("tasks", JSON.stringify(tasks));
-
+        localStorage.setItem('tasks', JSON.stringify(tasks));
     }
 
     else {
 
-        let tasks = JSON.parse(localStorage.getItem("tasks"));
+        let tasks = JSON.parse(localStorage.getItem('tasks'));
         tasks.push(task);
-        localStorage.setItem("tasks", JSON.stringify(tasks))
+        localStorage.setItem('tasks', JSON.stringify(tasks));
+
 
     }
 
-   
-    saveText.preventDefault();
+    getTask();
+    document.getElementById('formtask').reset();
+    e.preventDefault();
 
 }
 
@@ -38,15 +42,22 @@ function saveTask(saveText) {
 
 function getTask() {
 
-    let tasks = JSON.parse(localStorage.getItem("tasks"));
-    let tasksView = document.getElementById("tasks");
+    let tasks = JSON.parse(localStorage.getItem('tasks'));
+    document.getElementById('list').innerHTML="";
 
+    
 
-    for(let i = 0; i < tasks.lenght; i++) {
+    for(let i=0; i < tasks.length; i++) {
 
-        let title = tasks[i].title;
+        let action = tasks[i].action;
         let description = tasks[i].description;
 
-        tasksView.innerHTML = + title, + description;
+        document.getElementById('list').innerHTML += 
+        
+        `<p>${action} - ${description}</p> <input type="reset" value="Borrar"
+        class="boton btn-danger" id ="delete-action"/>`;
     }
+
 }
+
+getTask();

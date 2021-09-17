@@ -1,7 +1,7 @@
 main {
     width: 100%;
     height: auto;
-    padding: 3rem 0;
+    padding: 2rem 0;
     background: rgb(22, 30, 36);
     color: rgb(241, 241, 241);
     font-weight: 400;
@@ -10,6 +10,7 @@ main {
 .home-container {
     background: rgb(44, 58, 71);
     max-width: 40%;
+    height: auto;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -24,6 +25,8 @@ main {
     margin: 0 auto;
     padding: 2rem;
     text-align: justify;
+    color:rgb(241, 241, 241);
+    line-height: 2rem;
 }
 
 .board input, textarea {
@@ -48,19 +51,20 @@ main {
 }
 
 
+
 /*Responsive*/
 
 /*Móvil*/
 
 @media (min-width:240px) and (max-width:720px) {
     main {
-        height: 90vh;
         display: flex;
         justify-content: center;
         align-items: center;
     }
     .home-container {
         max-width: 90%;
+    
     }
     .board input, textarea {
         padding: 1rem;
@@ -72,7 +76,6 @@ main {
 @media (min-width:1366px) and (max-width:1920px){
 
     main {
-        height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;

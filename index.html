@@ -21,17 +21,17 @@
     <body>
 
         <header>
-                <h3><a href="index.html">CRUD APPLICATION</a></h3>
+            <h3><a href="index.html">CRUD APPLICATION</a></h3>
         </header>
 
         <main>
             <div class="home-container">
                 <h1>Lista de tareas</h1>
                 <div class="board">
-                    <form action="" id="formtask">
+                    <form id="formtask">
                         <h2>Escribe tu tarea:</h2>
 
-                        <input type="text"  id="action" placeholder="Tarea:" />
+                        <input type="text" id="action" placeholder="Tarea:" />
                         <h2>Describe tu tarea:</h2>
 
                         <input type="text" id="description"
@@ -40,19 +40,28 @@
                         <input type="submit" value="Agregar a la lista"
                             class="boton" />
 
-                            <br>
-                        
-                        <input type="reset" value="Borrar campos" class="boton btn-danger">
-                    </form>
-                </div>
-            </div>
+                        <br>
 
-            <div id="tasks">
+                        <input type="reset" value="Borrar campos" class="boton
+                            btn-danger">
+                    </form>
+
+                    
+                   
+                </div>
+                
+                    <div id="list" class="board board-list">
+                        <!--<h2>Lista creada:</h2>
+                        <p>Ejemplo</p>
+                        <p>Ejemplo</p>-->
+                    </div>
+                          
             </div>
+           
         </main>
 
         <footer>
-                <p>&copy; Copyright - 2021. Creado por <a href="">@ricardo_guevarag</a></p>
+            <p>&copy; Copyright - 2021. Creado por <a href="">@ricardo_guevarag</a></p>
         </footer>
 
 
