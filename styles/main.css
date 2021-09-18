@@ -29,6 +29,12 @@ main {
     line-height: 2rem;
 }
 
+.board-list{
+    background: rgb(22, 30, 36);
+   
+    color:rgb(241, 241, 241);
+}
+
 .board input, textarea {
     margin: 1rem 0;
     padding: 1.5rem;
@@ -50,6 +56,10 @@ main {
     background: rgb(255, 77, 77);
 }
 
+.board .btn-edit{
+    background: rgb(0, 184, 148);
+}
+
 
 
 
@@ -60,6 +70,7 @@ main {
 @media (min-width:240px) and (max-width:720px) {
     main {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
