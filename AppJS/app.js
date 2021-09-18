@@ -77,7 +77,7 @@ function deleteTask(action) {
   getTask();
 
 }
-//getTask();
+getTask();
 
 //editar campos
 
