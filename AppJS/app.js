@@ -59,7 +59,7 @@ function getTask() {
         <p>${action} - ${description}</p>
         <input type="reset" value="Borrar"
         class="boton btn-danger" id ="delete-action" onclick="deleteTask('${action}')"/>  
-        <input type="submit" value= "Editar" class="boton btn-edit" id="edit-action" /> `;
+        <input type="submit" value= "Editar" class="boton btn-edit" id="edit-action" onclick="editTask('${action}')" /> `;
   }
 
 }
@@ -84,28 +84,40 @@ getTask();
 
 
 
-//function editTask(action){
+function editTask(action){
 
-  //let tasks = JSON.parse(localStorage.getItem('tasks'));
-    //for(let i=0; i < tasks.length; i++){
-    //if(tasks[i].action === action){
-      //    //document.getElementById('container-body').innerHTML = "";
+  let tasks = JSON.parse(localStorage.getItem('tasks'));
+     for(let i=0; i < tasks.length; i++){
+    if(tasks[i].action === action){
+      document.getElementById('list').innerHTML = 
+      `<h2>Editar tarea:</h2>
+      <form class="formEdit">
+      <input type="text" id="edit-task" placeholder="Tarea:" />
+      <input type="text" id="new-description" placeholder="Descripción:" />
+      <br>
+       <input type="submit" value= "Editar" class="boton btn-edit" id="edit-action" onclick="updateTask('${i}')" />
+       <input type="submit" value= "cancelar" class="boton btn-danger" id="edit-action" onclick="getTask('${i}')" />
+       </form>`
 
 
-        //}
+         }
 
 
-//}
-//}
+}
+}
+
+getTask();
 
 //Actualizar cambios
 
-//function updateTask(i){
-  //  let tasks = JSON.parse(localStorage.getItem('tasks'));
-    //tasks[i].action = document.getElementById("edit-task").value;
-    //tasks[i].description = document.getElementById("new-description").value;
-//    localStorage.setItem("tasks",JSON.stringify(tasks));
+function updateTask(i){
+  let tasks = JSON.parse(localStorage.getItem('tasks'));
+    tasks[i].action = document.getElementById("edit-task").value;
+    tasks[i].description = document.getElementById("new-description").value;
+    localStorage.setItem("tasks",JSON.stringify(tasks));
 
-//}
+}
+
+getTask();
 
 

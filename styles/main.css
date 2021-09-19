@@ -1,7 +1,7 @@
 main {
     width: 100%;
-    height: auto;
-    padding: 2rem 0;
+    height: 100%;
+    padding: 1.5rem 0;
     background: rgb(22, 30, 36);
     color: rgb(241, 241, 241);
     font-weight: 400;
@@ -29,11 +29,7 @@ main {
     line-height: 2rem;
 }
 
-.board-list{
-    background: rgb(22, 30, 36);
-   
-    color:rgb(241, 241, 241);
-}
+
 
 .board input, textarea {
     margin: 1rem 0;
@@ -60,6 +56,12 @@ main {
     background: rgb(0, 184, 148);
 }
 
+.formEdit input{
+    width: 50%;
+    padding:0.5rem;
+}
+
+
 
 
 
@@ -69,6 +71,7 @@ main {
 
 @media (min-width:240px) and (max-width:720px) {
     main {
+        height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -76,11 +79,13 @@ main {
     }
     .home-container {
         max-width: 90%;
+        margin:3.5rem auto;
     
     }
     .board input, textarea {
         padding: 1rem;
     }
+
 }
 
 /*Desktop*/
