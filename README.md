@@ -1,6 +1,7 @@
 ﻿# Aplicacion---CRUD
  
  Puedes ingresar datos como una "lista de tareas", los cuales puedes editar y borrar, se almacenaran en el LocalStorage, asi como tambien se mostraran en pantalla.
+ Esta aplicacion fue creada con HTML5, CSS3 y JavaScript puro.
  
  Link del proyecto: https://app-crud.netlify.app/
  
