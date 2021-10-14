@@ -47,7 +47,7 @@ function getTask() {
 
 
 
-  for (let i = 0; i < tasks.length; i++) {
+  for (let i = 0; i< tasks.length; i++) {
 
     let action = tasks[i].action;
     let description = tasks[i].description;
@@ -92,14 +92,12 @@ function editTask(action){
       document.getElementById('list').innerHTML = 
       `<h2>Editar tarea:</h2>
       <form class="formEdit">
-      <input type="text" id="edit-task" placeholder="Tarea:" />
-      <input type="text" id="new-description" placeholder="Descripción:" />
+      <input type="text" id="edit-task" placeholder="Tarea:" required/>
+      <input type="text" id="new-description" placeholder="Descripción:" required />
       <br>
        <input type="submit" value= "Editar" class="boton btn-edit" id="edit-action" onclick="updateTask('${i}')" />
        <input type="submit" value= "cancelar" class="boton btn-danger" id="edit-action" onclick="getTask('${i}')" />
        </form>`
-
-
          }
 
 
